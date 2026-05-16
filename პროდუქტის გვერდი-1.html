@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>პროდუქტების მაღაზია</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#0f172a;
+    color:white;
+}
+
+
+
+header{
+    height:70vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1600&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+header h1{
+    font-size:70px;
+    margin-bottom:20px;
+}
+
+header p{
+    font-size:22px;
+    color:#e2e8f0;
+}
+
+
+
+.products{
+    padding:100px 10%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:50px;
+    margin-bottom:60px;
+    color:#facc15;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:35px;
+}
+
+.product-card{
+    background:#1e293b;
+    border-radius:25px;
+    overflow:hidden;
+    transition:0.4s;
+    box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+.product-card:hover{
+    transform:translateY(-10px);
+}
+
+.product-card img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+}
+
+.product-info{
+    padding:25px;
+}
+
+.product-info h3{
+    font-size:28px;
+    margin-bottom:15px;
+    color:#facc15;
+}
+
+.product-info p{
+    color:#cbd5e1;
+    line-height:1.7;
+    margin-bottom:20px;
+}
+
+.features{
+    list-style:none;
+    margin-bottom:20px;
+}
+
+.features li{
+    margin-bottom:8px;
+    color:#e2e8f0;
+    font-size:15px;
+}
+
+.price{
+    font-size:24px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+
+
+.buy-btn{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    background:#facc15;
+    color:#000;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.buy-btn:hover{
+    background:#fde047;
+    transform:scale(1.03);
+}
+
+
+
+footer{
+    background:#020617;
+    text-align:center;
+    padding:35px;
+    color:#94a3b8;
+    margin-top:80px;
+}
+
+
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:45px;
+    }
+
+    .section-title{
+        font-size:35px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+
+
+<header>
+
+    <div>
+
+        <h1>პროდუქტების მაღაზია</h1>
+
+        <p>
+            თანამედროვე პროდუქციის ონლაინ კატალოგი
+        </p>
+
+    </div>
+
+</header>
+
+
+
+<section class="products">
+
+    <h2 class="section-title">პოპულარული პროდუქტები</h2>
+
+    <div class="product-grid">
+
+        
+
+        <div class="product-card">
+
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1200&auto=format&fit=crop" alt="Nike Shoes">
+
+            <div class="product-info">
+
+                <h3>Nike Air Max</h3>
+
+                <p>
+                    თანამედროვე და კომფორტული სპორტული ფეხსაცმელი.
+                </p>
+
+                <ul class="features">
+                    <li>👟 Air Max Technology</li>
+                    <li>⚡ მსუბუქი დიზაინი</li>
+                    <li>💨 კომფორტული სირბილისთვის</li>
+                    <li>🎨 თანამედროვე სტილი</li>
+                </ul>
+
+                <div class="price">299 ₾</div>
+
+                <button class="buy-btn">ყიდვა</button>
+
+            </div>
+
+        </div>
+
+      
+
+        <div class="product-card">
+
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1200&auto=format&fit=crop" alt="Watch">
+
+            <div class="product-info">
+
+                <h3>Smart Watch</h3>
+
+                <p>
+                    თანამედროვე ჭკვიანი საათი.
+                </p>
+
+                <ul class="features">
+                    <li>⌚ AMOLED Display</li>
+                    <li>❤️ Heart Rate Monitor</li>
+                    <li>🔋 7 დღე ელემენტი</li>
+                    <li>📶 Bluetooth Support</li>
+                </ul>
+
+                <div class="price">450 ₾</div>
+
+                <button class="buy-btn">ყიდვა</button>
+
+            </div>
+
+        </div>
+
+       
+
+        <div class="product-card">
+
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1200&auto=format&fit=crop" alt="iPhone">
+
+            <div class="product-info">
+
+                <h3>iPhone 15 Pro</h3>
+
+                <p>
+                    პრემიუმ კლასის სმარტფონი.
+                </p>
+
+                <ul class="features">
+                    <li>📱 256GB Storage</li>
+                    <li>📸 48MP Camera</li>
+                    <li>⚡ A17 Pro Chip</li>
+                    <li>🔋 Fast Charging</li>
+                </ul>
+
+                <div class="price">4200 ₾</div>
+
+                <button class="buy-btn">ყიდვა</button>
+
+            </div>
+
+        </div>
+
+       
+
+        <div class="product-card">
+
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=1200&auto=format&fit=crop" alt="Headphones">
+
+            <div class="product-info">
+
+                <h3>Wireless Headphones</h3>
+
+                <p>
+                    მაღალი ხარისხის უკაბელო ყურსასმენები.
+                </p>
+
+                <ul class="features">
+                    <li>🎧 Noise Cancellation</li>
+                    <li>🔋 20 საათი ელემენტი</li>
+                    <li>📶 Bluetooth 5.3</li>
+                    <li>🎵 Premium Sound</li>
+                </ul>
+
+                <div class="price">350 ₾</div>
+
+                <button class="buy-btn">ყიდვა</button>
+
+            </div>
+
+        </div>
+
+      
+
+        <div class="product-card">
+
+            <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=1200&auto=format&fit=crop" alt="Laptop">
+
+            <div class="product-info">
+
+                <h3>MacBook Pro</h3>
+
+                <p>
+                    ძლიერი და თანამედროვე ლეპტოპი.
+                </p>
+
+                <ul class="features">
+                    <li>💻 M3 Processor</li>
+                    <li>⚡ 16GB RAM</li>
+                    <li>💾 512GB SSD</li>
+                    <li>🔋 ძლიერი ელემენტი</li>
+                </ul>
+
+                <div class="price">5200 ₾</div>
+
+                <button class="buy-btn">ყიდვა</button>
+
+            </div>
+
+        </div>
+
+        
+
+        <div class="product-card">
+
+            <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?q=80&w=1200&auto=format&fit=crop" alt="Camera">
+
+            <div class="product-info">
+
+                <h3>Canon Camera</h3>
+
+                <p>
+                    პროფესიონალური კამერა.
+                </p>
+
+                <ul class="features">
+                    <li>📸 24MP Camera</li>
+                    <li>🎥 4K Video</li>
+                    <li>🔍 Optical Zoom</li>
+                    <li>📶 WiFi Support</li>
+                </ul>
+
+                <div class="price">3100 ₾</div>
+
+                <button class="buy-btn">ყიდვა</button>
+
+            </div>
+
+        </div>
+
+     
+
+        <div class="product-card">
+
+            <img src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?q=80&w=1200&auto=format&fit=crop" alt="Keyboard">
+
+            <div class="product-info">
+
+                <h3>Gaming Keyboard</h3>
+
+                <p>
+                    RGB განათების მქონე კლავიატურა.
+                </p>
+
+                <ul class="features">
+                    <li>⌨ Mechanical Switches</li>
+                    <li>🌈 RGB განათება</li>
+                    <li>🎮 Gaming Mode</li>
+                    <li>⚡ Fast Response</li>
+                </ul>
+
+                <div class="price">280 ₾</div>
+
+                <button class="buy-btn">ყიდვა</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>
+        © 2026 ონლაინ მაღაზია | ყველა უფლება დაცულია
+    </p>
+
+</footer>
+
+</body>
+</html>
