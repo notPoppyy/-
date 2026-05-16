@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>დავით კელენჯერიძე | პერსონალური ვებ გვერდი</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background: linear-gradient(to right, #141e30, #243b55);
+      color:white;
+      min-height:100vh;
+      padding:30px;
+    }
+
+    .container{
+      max-width:1100px;
+      margin:auto;
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(12px);
+      border-radius:20px;
+      overflow:hidden;
+      box-shadow:0 0 25px rgba(0,0,0,0.4);
+    }
+
+    .header{
+      text-align:center;
+      padding:50px 20px;
+      background: rgba(0,0,0,0.25);
+    }
+
+    .header img{
+      width:190px;
+      height:190px;
+      border-radius:50%;
+      object-fit:cover;
+      border:5px solid white;
+      margin-bottom:20px;
+    }
+
+    .header h1{
+      font-size:42px;
+      margin-bottom:10px;
+    }
+
+    .header p{
+      font-size:19px;
+      opacity:0.9;
+    }
+
+    .socials{
+      margin-top:20px;
+    }
+
+    .socials a{
+      color:white;
+      text-decoration:none;
+      margin:0 10px;
+      font-size:18px;
+      transition:0.3s;
+    }
+
+    .socials a:hover{
+      color:#ffd700;
+    }
+
+    .content{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:25px;
+      padding:40px;
+    }
+
+    .card{
+      background: rgba(255,255,255,0.12);
+      padding:25px;
+      border-radius:15px;
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+      background: rgba(255,255,255,0.2);
+    }
+
+    .card h2{
+      margin-bottom:15px;
+      color:#ffd700;
+    }
+
+    .card p{
+      line-height:1.7;
+    }
+
+    ul{
+      padding-left:20px;
+    }
+
+    li{
+      margin-bottom:10px;
+    }
+
+    .skills{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:10px;
+    }
+
+    .skill{
+      background:#ffd700;
+      color:black;
+      padding:8px 15px;
+      border-radius:20px;
+      font-weight:bold;
+      font-size:14px;
+    }
+
+    .quote{
+      text-align:center;
+      padding:30px;
+      font-size:22px;
+      font-style:italic;
+      background: rgba(0,0,0,0.2);
+      color:#ffd700;
+    }
+
+    .footer{
+      text-align:center;
+      padding:20px;
+      background: rgba(0,0,0,0.25);
+      font-size:14px;
+    }
+
+    @media(max-width:768px){
+
+      .content{
+        grid-template-columns:1fr;
+      }
+
+      .header h1{
+        font-size:32px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    
+    <div class="header">
+
+      <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop" alt="Profile Photo">
+
+      <h1>დავით კელენჯერიძე</h1>
+
+      <p>
+        ვებ დეველოპერი | სტუდენტი | ტექნოლოგიებისა და სპორტის მოყვარული
+      </p>
+
+      <div class="socials">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">GitHub</a>
+      </div>
+
+    </div>
+
+    
+    <div class="content">
+
+      <div class="card">
+        <h2>👨‍💻 ჩემ შესახებ</h2>
+
+        <p>
+          მე ვარ დამწყები Front-End დეველოპერი საქართველოდან.
+          მაინტერესებს თანამედროვე ვებ ტექნოლოგიები,
+          UI/UX დიზაინი და ახალი პროექტების შექმნა.
+          ყოველდღიურად ვსწავლობ HTML, CSS და JavaScript-ს.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>🎯 მიზნები</h2>
+
+        <ul>
+          <li>სრული Stack დეველოპერობა</li>
+          <li>საერთაშორისო პროექტებზე მუშაობა</li>
+          <li>საკუთარი ვებ აპლიკაციის შექმნა</li>
+          <li>AI ტექნოლოგიების სწავლა</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>🎮 ჰობები</h2>
+
+        <ul>
+          <li>გეიმინგი</li>
+          <li>პროგრამირება</li>
+          <li>მუსიკის მოსმენა</li>
+          <li>ფეხბურთი</li>
+          <li>Arm Wrestling</li>
+          <li>ფილმების ყურება</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>🎬 საყვარელი ფილმები</h2>
+
+        <ul>
+          <li>Interstellar</li>
+          <li>Inception</li>
+          <li>The Dark Knight</li>
+          <li>Avengers: Endgame</li>
+          <li>Fight Club</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>💻 უნარები</h2>
+
+        <div class="skills">
+          <div class="skill">HTML</div>
+          <div class="skill">CSS</div>
+          <div class="skill">JavaScript</div>
+          <div class="skill">Responsive Design</div>
+          <div class="skill">GitHub</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>📚 განათლება</h2>
+
+        <p>
+          ვსწავლობ ვებ პროგრამირებას და აქტიურად ვმუშაობ
+          პრაქტიკულ პროექტებზე, რათა გავიუმჯობესო ცოდნა
+          Front-End Development-ში.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>🏆 მიღწევები</h2>
+
+        <ul>
+          <li>პირველი პერსონალური ვებ გვერდის შექმნა</li>
+          <li>Responsive დიზაინის სწავლა</li>
+          <li>GitHub პროექტების ატვირთვა</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>📞 კონტაქტი</h2>
+
+        <p>📧 Email: dato@example.com</p>
+        <p>📱 ტელ: +995 555 12 34 56</p>
+        <p>📍 საქართველო</p>
+      </div>
+
+    </div>
+
+    
+    <div class="quote">
+      "Never give up. Great things take time."
+    </div>
+
+
+    <div class="footer">
+      © 2026 დავით კელენჯერიძე | შექმნილია HTML & CSS-ით
+    </div>
+
+  </div>
+
+</body>
+</html>

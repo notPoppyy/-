@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ქუთაისი — ჩემი საყვარელი ქალაქი</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Montserrat',sans-serif;
+    background:#0f172a;
+    color:white;
+    overflow-x:hidden;
+}
+
+
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1603569283847-aa295f0d016a?q=80&w=1600&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:90px;
+    font-weight:700;
+    letter-spacing:3px;
+    margin-bottom:20px;
+    text-shadow:0 0 20px rgba(0,0,0,0.8);
+}
+
+.hero-content p{
+    font-size:24px;
+    max-width:800px;
+    line-height:1.8;
+}
+
+
+
+section{
+    padding:100px 10%;
+}
+
+.section-title{
+    font-size:50px;
+    text-align:center;
+    margin-bottom:60px;
+    color:#facc15;
+}
+
+
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.5);
+}
+
+.about-text p{
+    font-size:20px;
+    line-height:2;
+    color:#e2e8f0;
+}
+
+
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:35px;
+}
+
+.card{
+    background:#1e293b;
+    border-radius:25px;
+    overflow:hidden;
+    transition:0.4s;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:25px;
+}
+
+.card-content h3{
+    font-size:28px;
+    margin-bottom:15px;
+    color:#facc15;
+}
+
+.card-content p{
+    line-height:1.8;
+    color:#cbd5e1;
+}
+
+
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:20px;
+    transition:0.4s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+
+
+footer{
+    background:#020617;
+    text-align:center;
+    padding:40px;
+    color:#94a3b8;
+    font-size:18px;
+}
+
+
+
+@media(max-width:900px){
+
+    .hero-content h1{
+        font-size:55px;
+    }
+
+    .hero-content p{
+        font-size:18px;
+    }
+
+    .about{
+        grid-template-columns:1fr;
+    }
+
+    .section-title{
+        font-size:38px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+
+<div class="hero">
+
+    <div class="hero-content">
+        <h1>ქუთაისი</h1>
+
+        <p>
+            საქართველოს უძველესი, ულამაზესი და ისტორიული ქალაქი —
+            ადგილი სადაც ისტორია, კულტურა და ბუნება ერთმანეთს ერწყმის.
+        </p>
+    </div>
+
+</div>
+
+
+
+<section>
+
+    <h2 class="section-title">ქუთაისის შესახებ</h2>
+
+    <div class="about">
+
+        <img src="https://www.tbilisipost.ge/media/%E1%83%A1%E1%83%94%E1%83%A5%E1%83%A2%E1%83%94%E1%83%9B%E1%83%91%E1%83%94%E1%83%A0%E1%83%98%202023/%E1%83%A5%E1%83%A3%E1%83%97%E1%83%90%E1%83%98%E1%83%A1%E1%83%98-2000x1500.jpg" alt="Kutaisi">
+
+        <div class="about-text">
+
+            <p>
+                ქუთაისი საქართველოს ერთ-ერთი უძველესი ქალაქია და იმერეთის
+                რეგიონის მთავარი ცენტრია. ქალაქი მდინარე რიონის სანაპიროზე მდებარეობს
+                და გამოირჩევა ულამაზესი ხედებით, ისტორიული ძეგლებითა და
+                განსაკუთრებული ატმოსფეროთი.
+            </p>
+
+            <br>
+
+            <p>
+                ქუთაისში მდებარეობს ცნობილი ბაგრატის ტაძარი,
+                გელათის მონასტერი, კოლხეთის შადრევანი,
+                თეთრი ხიდი და პრომეთეს მღვიმე.
+                ეს ქალაქი ერთდროულად თანამედროვე და ისტორიულია.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section>
+
+    <h2 class="section-title">ღირსშესანიშნაობები</h2>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <img src="https://cdn.georgiantravelguide.com/storage/files/bagratis-tadzari-kutaisi-imereti.jpg" alt="ბაგრატის ტაძარი">
+
+            <div class="card-content">
+                <h3>ბაგრატის ტაძარი</h3>
+
+                <p>
+                    XI საუკუნის ულამაზესი ტაძარი,
+                    რომელიც UNESCO-ს მსოფლიო მემკვიდრეობის ნაწილია.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img src="https://madloba.info/media/images/Screenshot_3_YCxyb96.width-720.format-avif.avif" alt="კოლხეთის შადრევანი">
+
+            <div class="card-content">
+                <h3>კოლხეთის შადრევანი</h3>
+
+                <p>
+                    ქუთაისის მთავარი სიმბოლო —
+                    ოქროსფერი ფიგურებით გაფორმებული ულამაზესი შადრევანი.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img src="https://cdn.georgiantravelguide.com/storage/files/imereti-kutaisi-kutaisi-kutaisi-4.jpg" alt="თეთრი ხიდი">
+
+            <div class="card-content">
+                <h3>თეთრი ხიდი</h3>
+
+                <p>
+                    პოპულარული ადგილი ქალაქში,
+                    საიდანაც მდინარე რიონის ულამაზესი ხედები იშლება.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section>
+
+    <h2 class="section-title">ფოტო გალერეა</h2>
+
+    <div class="gallery">
+
+        <img src="https://www.orexca.com/img/georgia/kutaisi/kutaisi1.jpg">
+
+        <img src="https://www.holidaymonk.com/wp-content/uploads/2024/07/Georgia-Tour-Package-8-1.webp">
+
+        <img src="https://i.pinimg.com/originals/ad/e9/2d/ade92db6afcc0f33c08556e4b1487748.jpg">
+
+        <img src="https://kutaisiinn.com/upload/iblock/32a/c08x191enf7f2h7tshk0kktkqz421x2o.jpg">
+
+        <img src="https://megatv.ge/wp-content/uploads/2022/12/-%E1%83%AE%E1%83%94-%E1%83%A5%E1%83%A3%E1%83%97%E1%83%90%E1%83%98%E1%83%A1%E1%83%98-jpg.webp">
+
+        <img src="https://cdnn1.img.sputnik-georgia.com/img/23912/17/239121763_0:573:6016:3957_1920x0_80_0_0_b1be53326eef554f5015c8e07489785c.jpg">
+
+    </div>
+
+</section>
+
+
+
+<footer>
+
+    <p>
+        © 2026 ჩემი საყვარელი ქალაქი — ქუთაისი
+    </p>
+
+</footer>
+
+</body>
+</html>
